@@ -37,7 +37,8 @@ class FootballTeam(object):
     
 class FootballClub(FootballTeam):
     def join_new_league(self, league_name):
-        self.leagues.append(self.leagues)
+        self.leagues.append(league_name)
+        return self.leagues
     
     def remove_league(self, league_name):
         if league_name in self.leagues:
@@ -67,12 +68,10 @@ class FootballClub(FootballTeam):
     
     
 if __name__ == '__main__':
-    gor = FootballClub('gor mahia', 'Kisumu')
-    gor.add_player('Emmanuel Muthui')
-    gor.add_club_sponsor("sportpesa")
     
-    print gor.team_name, gor.home_ground
-    
+    bandari = FootballClub('Bandari FC', 'Kisumu')
+    bandari.join_new_league('sportpesa')
+    print bandari.leagues
     
     
     
