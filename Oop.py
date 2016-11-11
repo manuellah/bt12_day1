@@ -7,32 +7,43 @@ class FootballTeam(object):
         self.captain = ''
         self.leagues = []
         self.sponsors = []
-    def add_player('name'):
+    def add_player('player_name'):
         pass
     
-    def remove_player('name'):
+    def remove_player('player_name'):
         pass
     
-    def set_team_captain('name'): 
+    def set_team_captain('captain_name'): 
         pass
         
-    def set_team_coach('name'):
+    def set_team_coach('coach_name'):
         pass
     
-    def change_home_ground():
+    def change_home_ground('home_ground'):
         pass
     
 class FootballClub(FootballTeam):
-    def join_new_league():
+    def join_new_league('league_name'):
         pass
     
-    def remove_league():
+    def remove_league('league_name'):
         pass
     
     def current_leagues():
         pass
     
-    def add_club_sponsor():
+    def add_club_sponsor('name'):
         pass
     
-    def remove_club_sponsor():
+    def remove_club_sponsor('name'):
+        pass
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
